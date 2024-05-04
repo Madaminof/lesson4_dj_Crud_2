@@ -1,0 +1,11 @@
+<title>Products</title>
+
+<h1>Products</h1><br>
+
+
+<body>
+{% for p in phone %}
+    <a href="{% url 'Phones:details' p.pk %}" >{{ p.model }}</a><hr>
+{% endfor %}
+
+</body>

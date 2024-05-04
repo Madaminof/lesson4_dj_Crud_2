@@ -1,0 +1,18 @@
+<title>Detail</title>
+
+
+
+<body>
+<img src="{{ product.image.url }}"/><br>
+ {{ product.model }}<br>
+ {{ product.storage }}<br>
+ {{ product.color }}<br>
+{{ product.price }}
+<hr/>
+
+<a href="{% url 'Phones:get_info'%}" >home</a><br>
+<a href="{% url 'Phones:update' product.pk %}" >Update</a><br>
+<a href="{% url 'Phones:delete_product' product.pk %}" >Delete</a><br>
+
+
+</body>
